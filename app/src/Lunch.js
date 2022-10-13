@@ -1,7 +1,7 @@
 export default function Lmenu(props) {
     // console.log(props.data)
-        let LunchFil = props.data.filter(lunch =>
-            lunch.category.title === 'Lunch'
+        let LunchFil = props.data.filter(lunch => //change name to meal (more genaric)
+            lunch.category.title === 'Lunch'  //fix this line to make more dynamic change lunch to state (page)
             );
             console.log(LunchFil)
             
@@ -9,7 +9,7 @@ export default function Lmenu(props) {
         
             return (
             <>
-            <div className="invis container p-5 my-5 border border-3" id="Lmenu">
+            <div className=" container p-5 my-5 border border-3" id="Lmenu">
             <div className="row bg-primary">
                     {LunchFil.map(product => (
                         <>

@@ -9,7 +9,7 @@ export default function Dmenu(props) {
         
             return (
             <>
-            <div className="invis container p-5 my-5 border border-3" id="Dmenu">
+            <div className=" container p-5 my-5 border border-3" id="Dmenu">
             <div className="row bg-primary">
                     {DinFil.map(product => (
                         <>

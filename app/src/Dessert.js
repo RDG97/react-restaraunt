@@ -11,7 +11,7 @@ export default function Desmenu(props) {
         
             return (
             <>
-            <div className="invis container p-5 my-5 border border-3" id="Desmenu">
+            <div className=" container p-5 my-5 border border-3" id="Desmenu">
             <div className="row bg-primary">
                     {DesFil.map(product => (
                         <>

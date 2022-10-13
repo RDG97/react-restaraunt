@@ -10,12 +10,14 @@ import Nav2 from "./Nav2";
 import Lmenu from "./Lunch";
 import Dmenu from "./Dinner";
 import Desmenu from "./Dessert";
+import Clicker from './Button'
 
 function Nav() {
 let facts = []
 
  const baseURL = "https://astute-baton-362318.ue.r.appspot.com/api/json/";
  const [data, setData] = useState([]);
+ const [page, setPage] = useState('Breakfast');
 
  useEffect(() => {
    axios.get(baseURL).then((response) => {
@@ -28,27 +30,35 @@ let facts = []
    ;
  }, []);
 
+ if (data.length === 0) return <div className="loading">please...</div>;
+ function handleClick(text) {
+  setPage(text)
+ }
 
-if (data.length > 0) {
-  console.log('AppData', data);
 
   return (
         
-
+//refactor clickers and pagge == to be one lines. mine generic
 <div>
   <Nav2 />
   <AboutUs />
-  <MealOptions />
-  <MenuBase />
-  <Bmenu data={data}/>
-  <Lmenu data={data}/>
-  <Dmenu data={data}/>
-  <Desmenu data={data}/>
+  
+  <Clicker text='Breakfast' handleClick={handleClick} />
+  <Clicker text='Lunch' handleClick={handleClick}/>
+  <Clicker text='Dinner' handleClick={handleClick}/>
+  <Clicker text='Dessert' handleClick={handleClick}/>
+
+  
+  
+  {page == 'Breakfast' && <Bmenu data={data}/>}
+  {page == 'Lunch' && <Lmenu data={data}/>}
+  {page == 'Dinner' && <Dmenu data={data}/>}
+  {page == 'Dessert' && <Desmenu data={data}/>}
   
   </div>
 
     );
   }
-}
+
 
 export default Nav
