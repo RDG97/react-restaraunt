@@ -1,0 +1,18 @@
+#MealOp {
+    width: 400px;
+    height: 200px;
+}
+
+.invis {
+    opacity: 0;
+}
+
+#menu {
+    
+    height: 700px;
+}
+
+body {
+    background-image: url("/workspace/react-restaraunt/app/src/img/215328.jpg");
+    background-color: #cccccc;
+   }
