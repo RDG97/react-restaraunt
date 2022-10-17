@@ -8,7 +8,7 @@ function Nav2() {
                  Events
                </button>
                <ul className="dropdown-menu">
-                 <li><a className="dropdown-item" href="https://www.youtube.com/watch?v=Wb3UrJjAac4&ab_channel=Daymonster">Dog eats bean burrito in under 1 second</a></li>
+                 <li><a className="dropdown-item" href="https://www.youtube.com/shorts/E-BBX1q83FQ">little German boy plays fortnite and drinks cola</a></li>
                  <li><a className="dropdown-item" href="#">Link 2</a></li>
                  <li><a className="dropdown-item" href="#">Link 3</a></li>
                </ul>

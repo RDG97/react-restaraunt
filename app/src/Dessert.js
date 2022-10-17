@@ -3,16 +3,10 @@ export default function Desmenu(props) {
         let DesFil = props.data.filter(des =>
             des.category.title === 'Dessert'
             );
-            
-            // let breakItems = [];
-            // for (let i = 0; i < BreakFil.length; i++) {
-            //     breakItems.push(
-            
-        
             return (
             <>
             <div className=" container p-5 my-5 border border-3" id="Desmenu">
-            <div className="row bg-primary">
+            <div className="row bg-warning">
                     {DesFil.map(product => (
                         <>
                 <h1>{product.title}</h1>

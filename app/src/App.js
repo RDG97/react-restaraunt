@@ -1,10 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from 'axios'
 import React from "react";
-
-import MealOptions from './MealOptions';
 import Bmenu from './Breakfast';
-import MenuBase from './MenuBase';
 import AboutUs from './Aboutus';
 import Nav2 from "./Nav2";
 import Lmenu from "./Lunch";
@@ -13,7 +10,7 @@ import Desmenu from "./Dessert";
 import Clicker from './Button'
 
 function Nav() {
-let facts = []
+
 
  const baseURL = "https://astute-baton-362318.ue.r.appspot.com/api/json/";
  const [data, setData] = useState([]);
@@ -30,7 +27,10 @@ let facts = []
    ;
  }, []);
 
- if (data.length === 0) return <div className="loading">please...</div>;
+ if (data.length === 0) return <div className="loading fw-bold text-warning fs-3">Loading please be patient... we are trying our best</div>;
+
+
+
  function handleClick(text) {
   setPage(text)
  }
@@ -38,7 +38,7 @@ let facts = []
 
   return (
         
-//refactor clickers and pagge == to be one lines. mine generic
+//refactor clickers and page == to be one line. more generic
 <div>
   <Nav2 />
   <AboutUs />

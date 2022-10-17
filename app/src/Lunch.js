@@ -10,7 +10,7 @@ export default function Lmenu(props) {
             return (
             <>
             <div className=" container p-5 my-5 border border-3" id="Lmenu">
-            <div className="row bg-primary">
+            <div className="row bg-warning">
                     {LunchFil.map(product => (
                         <>
                 <h1>{product.title}</h1>

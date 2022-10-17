@@ -9,13 +9,10 @@ export default function Bmenu(props) {
         brek.category.title === 'Breakfast'
         );
         console.log(BreakFil)
-       
-        
-    
         return (
         <>
         <div className="container p-5 my-5 border border-3" id="Bmenu">
-        <div className="row bg-primary">
+        <div className="row bg-warning">
                 {BreakFil.map(product => (
                     <>
             <h1>{product.title}</h1>
