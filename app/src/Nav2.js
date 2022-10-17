@@ -30,9 +30,9 @@ function Nav2() {
                  The Staff
                </button>
                <ul className="dropdown-menu">
-                 <li><a className="dropdown-item" href="#">Link 1</a></li>
-                 <li><a className="dropdown-item" href="#">Link 2</a></li>
-                 <li><a className="dropdown-item" href="#">Link 3</a></li>
+                 <li><a className="dropdown-item" href="https://github.com/JMStewart00">Josh S.</a></li>
+                 <li><a className="dropdown-item" href="https://www.imdb.com/name/nm0007231/">Fabio</a></li>
+                 <li><a className="dropdown-item" href="https://en.wikipedia.org/wiki/Eddie_(Iron_Maiden)">Eddie from Iron Maiden</a></li>
                </ul>
              </div>
              

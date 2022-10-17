@@ -27,8 +27,16 @@ function Nav() {
    ;
  }, []);
 
- if (data.length === 0) return <div className="loading fw-bold text-warning fs-3">Loading please be patient... we are trying our best</div>;
-
+ if (data.length === 0) return <div id="spinny"><div class="spinner-grow text-warning" role="status" id="spinny">
+ <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status" id="spinny">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status" id="spinny">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</div>
 
 
  function handleClick(text) {

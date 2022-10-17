@@ -16,3 +16,8 @@ body {
     background-image: url("/workspace/react-restaraunt/app/src/img/215328.jpg");
     background-color: #cccccc;
    }
+#spinny {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
