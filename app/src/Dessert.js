@@ -1,5 +1,4 @@
 export default function Desmenu(props) {
-    // console.log(props.data)
         let DesFil = props.data.filter(des =>
             des.category.title === 'Dessert'
             );

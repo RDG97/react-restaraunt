@@ -1,13 +1,12 @@
-export default function Bmenu(props) {
-    let BreakFil = props.data.filter(brek =>
-        brek.category.title === 'Breakfast'
+export default function Cajmenu(props) {
+    let CajFil = props.data.filter(caj =>
+        caj.cuisine.label === 'Cajun'
         );
-        console.log(BreakFil)
         return (
         <>
-        <div className="container p-5 my-5 border border-3" id="Bmenu">
+        <div className=" container p-5 my-5 border border-3" id="Cajmenu">
         <div className="row bg-warning">
-                {BreakFil.map(product => (
+                {CajFil.map(product => (
                     <>
             <h1>{product.title}</h1>
             <h4>{product.description}</h4>
