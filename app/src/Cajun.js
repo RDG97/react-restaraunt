@@ -1,6 +1,6 @@
 export default function Cajmenu(props) {
     let CajFil = props.data.filter(caj =>
-        caj.cuisine.label === 'Cajun'
+        caj.cuisine.title === 'cajun'
         );
         return (
         <>

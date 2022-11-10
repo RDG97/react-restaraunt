@@ -1,6 +1,6 @@
 export default function Dmenu(props) {
         let DinFil = props.data.filter(din =>
-            din.category.title === 'Dinner'
+            din.category.title === 'dinner'
             );
             console.log(DinFil)
             return (

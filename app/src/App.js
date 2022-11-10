@@ -13,31 +13,31 @@ import Cajmenu from "./Cajun";
 function Nav() {
 
 
- const baseURL = "https://astute-baton-362318.ue.r.appspot.com/api/json/";
- const [data, setData] = useState([]);
- const [page, setPage] = useState('Breakfast');
+  const baseURL = "https://8000-rdg97-backendbistro-jrck2wrj4ta.ws-us75.gitpod.io/allmenu/";
+  const [data, setData] = useState([]);
+  const [page, setPage] = useState('Breakfast');
 
- useEffect(() => {
-   axios.get(baseURL).then((response) => {
-     setData(response.data);
-     console.log(response)
-   })
-   .catch(function (error){
+  useEffect(() => {
+    axios.get(baseURL).then((response) => {
+      const dataObj = response.data
+      setData(dataObj);
+    })
+    .catch(function (error){
     console.log(error)
-   })
-   ;
- }, []);
+    })
+    ;
+  }, []);
 
- if (data.length === 0) return <div id="spinny"><div class="spinner-grow text-warning" role="status" id="spinny">
- <span class="visually-hidden">Loading...</span>
-</div>
-<div class="spinner-grow text-warning" role="status" id="spinny">
+  if (data.length === 0) {return <div id="spinny"><div class="spinner-grow text-warning" role="status" id="spinny">
   <span class="visually-hidden">Loading...</span>
 </div>
 <div class="spinner-grow text-warning" role="status" id="spinny">
   <span class="visually-hidden">Loading...</span>
 </div>
+<div class="spinner-grow text-warning" role="status" id="spinny">
+  <span class="visually-hidden">Loading...</span>
 </div>
+</div>} else if (data.length > 0) {console.log('data', data)}
 
 
  function handleClick(text) {

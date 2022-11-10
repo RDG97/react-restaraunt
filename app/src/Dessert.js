@@ -1,6 +1,6 @@
 export default function Desmenu(props) {
         let DesFil = props.data.filter(des =>
-            des.category.title === 'Dessert'
+            des.category.title === 'dessert'
             );
             return (
             <>

@@ -1,6 +1,6 @@
 export default function Bmenu(props) {
     let BreakFil = props.data.filter(brek =>
-        brek.category.title === 'Breakfast'
+        brek.category.title === 'breakfast'
         );
         console.log(BreakFil)
         return (

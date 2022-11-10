@@ -1,9 +1,9 @@
 export default function Lmenu(props) {
     // console.log(props.data)
         let LunchFil = props.data.filter(lunch => //change name to meal (more genaric)
-            lunch.category.title === 'Lunch'  //fix this line to make more dynamic change lunch to state (page)
+            lunch.category.title === 'lunch'  //fix this line to make more dynamic change lunch to state (page)
             );
-            console.log(LunchFil)
+            console.log('after lunch filter', LunchFil)
             
             
         
