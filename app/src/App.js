@@ -9,6 +9,7 @@ import Dmenu from "./Dinner";
 import Desmenu from "./Dessert";
 import Clicker from './Button'
 import Cajmenu from "./Cajun";
+import Amermenu from "./American";
 
 function Nav() {
 
@@ -57,6 +58,7 @@ function Nav() {
   <Clicker text='Dinner' handleClick={handleClick}/>
   <Clicker text='Dessert' handleClick={handleClick}/>
   <Clicker text='Cajun' handleClick={handleClick}/>
+  <Clicker text='American' handleClick={handleClick}/>
 
 
   
@@ -66,6 +68,7 @@ function Nav() {
   {page == 'Dinner' && <Dmenu data={data}/>}
   {page == 'Dessert' && <Desmenu data={data}/>}
   {page == 'Cajun' && <Cajmenu data={data}/>}
+  {page == 'American' && <Amermenu data={data}/>}
   
   </div>
 

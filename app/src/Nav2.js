@@ -45,9 +45,11 @@ function Nav2() {
                  <li><a className="dropdown-item" href="#">Link 2</a></li>
                  <li><a className="dropdown-item" href="#">Link 3</a></li>
                </ul>
+               
              </div>
-           
+             
          </ul>
+         <a type="button" className="btn btn-warning d-flex justify-content-end" href="https://8000-rdg97-backendbistro-jrck2wrj4ta.ws-us75.gitpod.io/admin/login/?next=/admin/">Log-in</a>
          </div>
     )
 }
